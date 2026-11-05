@@ -1,0 +1,155 @@
+
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+.pnp.*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ==========================================
+# Environment Variables
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# Local environment overrides
+*.env.local
+
+# ==========================================
+# Build Outputs
+# ==========================================
+dist/
+build/
+out/
+lib/
+.tmp/
+.temp/
+.cache/
+.turbo/
+.next/
+.output/
+.vercel/
+*.tsbuildinfo
+
+# ==========================================
+# TypeScript
+# ==========================================
+*.d.ts.map
+*.js.map
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+__snapshots__/
+*.lcov
+junit.xml
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Package Manager
+# ==========================================
+.npm/
+.pnpm-store/
+.pnpm-debug.log*
+.yarn-integrity
+
+# ==========================================
+# Temporary Files
+# ==========================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# ==========================================
+# IDE & Editor
+# ==========================================
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# Operating System
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# ==========================================
+# Security & Credentials
+# ==========================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+secrets/
+credentials/
+service-account*.json
+
+# ==========================================
+# Local Databases
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# ==========================================
+# Archives & Packaged Files
+# ==========================================
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# ==========================================
+# Miscellaneous
+# ==========================================
+.eslintcache
+.stylelintcache
+*.pid
+*.pid.lock
+*.seed
+*.orig
+*.rej
+```

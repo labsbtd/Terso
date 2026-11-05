@@ -1,0 +1,98 @@
+{
+  "name": "@labsbtd/terso",
+  "version": "1.1.4",
+  "description": "Privacy-preserving security scanning SDK with verifiable Solana proofs",
+  "license": "MIT",
+  "author": "Labs BTD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labsbtd/Terso.git"
+  },
+"keywords": [
+  "terso",
+  "security",
+  "scanner",
+  "typescript",
+  "sdk",
+  "javascript",
+  "nodejs",
+  "open-source",
+  "vibe-coding",
+  "ai-generated-code",
+  "code-security",
+  "security-scanner",
+  "vulnerability-scanner",
+  "vulnerability-detection",
+  "static-analysis",
+  "sast",
+  "code-analysis",
+  "code-audit",
+  "security-audit",
+  "dependency-scanning",
+  "secret-scanning",
+  "performance",
+  "performance-optimization",
+  "code-optimization",
+  "code-quality",
+  "developer-tools",
+  "devtools",
+  "cli",
+  "automation",
+  "ai-security",
+  "application-security",
+  "appsec",
+  "devsecops",
+  "production-readiness",
+  "solana",
+  "security-proofs"
+],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate:package": "npm run typecheck && npm run test && npm run lint && npm run format:check && npm run build && npm pack --dry-run",
+    "prepublishOnly": "npm run validate:package"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.0",
+    "@vitest/coverage-v8": "^4.0.6",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vitest": "^4.0.6"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.8.0",
+    "@solana/web3.js": "1.99.0"
+  }
+}
